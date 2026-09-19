@@ -1,7 +1,7 @@
 ﻿#Requires AutoHotkey v2.0
 
 ; ---- CONFIG ----
-gameExe := "if-app.exe"
+gameExe := "infalsus.exe"
 
 ; ---- TOGGLE ----
 F12::Suspend(-1)
@@ -11,22 +11,22 @@ F12::Suspend(-1)
 
 LButton::
 {
-    Send("{q down}")
+    Send("{f down}")
 }
 
 LButton Up::
 {
-    Send("{q up}")
+    Send("{f up}")
 }
 
 RButton::
 {
-    Send("{g down}")
+    Send("{{Space} down}")
 }
 
 RButton Up::
 {
-    Send("{g up}")
+    Send("{{Space} up}")
 }
 
 Enter::Send("{LButton}")
